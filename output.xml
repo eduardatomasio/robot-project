@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230731 16:13:38.526" rpa="false" schemaversion="4">
+<suite id="s1" name="Primeiro Teste" source="C:\Users\Fernando Tomasio\Documents\robot-project\primeiro_teste.robot">
+<test id="s1-t1" name="Abrir navegador e acessar site do Organo" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230731 16:13:38.712" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg timestamp="20230731 16:13:38.718" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230731 16:13:38.712" endtime="20230731 16:13:40.672"/>
+</kw>
+<status status="PASS" starttime="20230731 16:13:38.698" endtime="20230731 16:13:40.682"/>
+</test>
+<status status="PASS" starttime="20230731 16:13:38.533" endtime="20230731 16:13:40.687"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

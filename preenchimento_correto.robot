@@ -25,6 +25,11 @@ Verificar se ao preencher os campos do formulário corretamente o card é criado
     E clique no botão criar card
     Então identificar o card no time esperado    
 
+Verificar se é possível criar mais de um card se preenchidos os dados corretamente
+    Dado que preencha o formulário
+    E clique no botão criar card
+    Então identificar 3 cards no tipo esperado
+
 *** Keywords ***
  Dado que preencha o formulário
     Input Text    ${CAMPO_NOME}          Eduarda
@@ -40,6 +45,12 @@ E clique no botão criar card
  Então identificar o card no time esperado
     Element Should Be Visible    class:colaborador
     Sleep    5s
-    
+
+Então identificar 3 cards no tipo esperado
+    FOR    ${i}    IN RANGE    1    3
+         Dado que preencha o formulário
+         E clique no botão criar card
+    END
+    Sleep    5s
     
 
